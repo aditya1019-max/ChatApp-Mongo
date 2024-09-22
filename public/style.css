@@ -1,0 +1,105 @@
+/* //make sure to connect you css file to ejs file and also dont forget to set path in index.js file  */
+/* app.use(express.static(path.join(__dirname, "public")));  -> this is tell express to use staic files like css, js to use from public folder */
+/* style.css */
+/* style.css */
+/* style.css */
+/* style.css */
+
+body {
+    background-color: #f3e5f5; /* Light purple background */
+    color: #4a148c; /* Dark purple text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #4a148c; /* Dark purple */
+}
+
+form {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #7b1fa2; /* Medium purple button */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #9c27b0; /* Lighter purple on hover */
+}
+
+.chat {
+    background-color: #d1c4e9; /* Light purple chat background */
+    border: 1px solid #7b1fa2; /* Medium purple border */
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 60%;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat p {
+    margin: 5px 0;
+}
+
+.chat .msg {
+    background-color: #b39ddb; /* Light purple for message background */
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+    margin: 5px 0;
+}
+
+.chat .msg p {
+    margin: 0;
+}
+
+.chat .msg form {
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.chat .msg button {
+    background-color: #388e3c; /* Dark green button */
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.chat .msg button:hover {
+    background-color: #66bb6a; /* Lighter green on hover */
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #7b1fa2; /* Medium purple horizontal rule */
+    margin: 10px 0;
+}
+
+/* Chat bubble arrow */
+.chat::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #d1c4e9; /* Light purple chat background */
+}
